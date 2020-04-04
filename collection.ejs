@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+<h1>My collection ju!</h1>
+</div>
+</header>
+<div class="row">
+<% roadju.forEach(function(im){ %>
+    <div class="col-md-3 col-sm-6">
+    <img src="<%- im.imgurl %>"width = 250px">
+    <div class="caption">
+    <h4><%- im.name %></h4>
+</div>
+</div>
+<% }); %>
+</div>
+</div>
+<%- include("partials/footer") %>
